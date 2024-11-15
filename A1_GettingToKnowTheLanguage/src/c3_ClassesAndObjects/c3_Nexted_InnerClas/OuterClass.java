@@ -2,9 +2,8 @@ package c3_ClassesAndObjects.c3_Nexted_InnerClas;
 
 @SuppressWarnings("unused")
 public class OuterClass {
-	
-	interface innerInterface{
-		
+
+	interface innerInterface {
 	}
 
 	int z = 3;
@@ -24,9 +23,11 @@ public class OuterClass {
 
 		OuterClass.InnerClass innerClass = outerClass.new InnerClass();
 		InnerClass innerClass2 = outerClass.new InnerClass();
-	//	InnerClass innerClass3= new outerClass.InnerClass();	//wrong 
+		// InnerClass innerClass3= new outerClass.InnerClass(); //wrong
 
-		StaticInnerClass staticInnerClass = new StaticInnerClass();
+		OuterClass.
+
+				StaticInnerClass staticInnerClass = new StaticInnerClass();
 	}
 
 }

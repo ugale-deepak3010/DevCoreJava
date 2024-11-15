@@ -17,13 +17,14 @@ public class DataStructure {
 
 		// Print out values of even indices of the array
 		DataStructureIterator iterator = this.new EvenIterator();
+		
 		while (iterator.hasNext()) {
 			System.out.print(iterator.next() + " ");
 		}
 		System.out.println();
 	}
-	
-	//TestChange For Git.
+
+	// TestChange For Git.
 
 	interface DataStructureIterator extends java.util.Iterator<Integer> {
 	}
@@ -38,7 +39,7 @@ public class DataStructure {
 
 		public boolean hasNext() {
 
-			// Check if the current element is the last in the array
+			// Check if the current element is the last in the array || DataStructure.SIZE / it's innerClass
 			return (nextIndex <= SIZE - 1);
 		}
 
