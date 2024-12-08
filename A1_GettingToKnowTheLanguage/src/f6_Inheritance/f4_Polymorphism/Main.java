@@ -29,6 +29,14 @@ public class Main {
 		// RunTime Polymorphism //method Overriding
 		parent1.sayHello("Deepak");
 		parent2.sayHello("Ugale");
+		System.out.println();
+		
+		//---------------------------------------
+		
+		WhySameNameParameterNotAllow why=new WhySameNameParameterNotAllow();
+		
+		why.show(2);
+		why.show(2L);
 
 	}
 

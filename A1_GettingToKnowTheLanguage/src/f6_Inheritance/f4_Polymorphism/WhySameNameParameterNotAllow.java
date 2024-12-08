@@ -14,11 +14,13 @@ public class WhySameNameParameterNotAllow {
 
 	// Java enforce: Signature should be proper is main reason --Ambiguity
 
+	//1234
 	public void show(int x) {
-		System.out.println(x);
+		System.err.println(x);
 	}
 
-	public int show(String x) {
+	//1234L
+	public int show(long x) {
 		System.out.println(x);
 
 		return 0;
