@@ -1,5 +1,7 @@
 package g8_Generics.a2_TypeInference;
 
+
+
 public class GenericMethodExample {
 
     public static <T> void printArray(T[] array) {
