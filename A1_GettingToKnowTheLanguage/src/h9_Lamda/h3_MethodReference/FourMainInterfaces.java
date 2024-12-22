@@ -34,6 +34,7 @@ public class FourMainInterfaces {
 
 		// 4.
 		Predicate<String> TestPredicate = (String s) -> s.length() == 3;
+		Predicate<String> TestPredicate_v2 = s -> s.length() == 3;
 
 		boolean b = TestPredicate.test("Dee");
 		System.out.println(b);
@@ -43,31 +44,16 @@ public class FourMainInterfaces {
 
 		BiConsumer<String, String> biAcceptBiConsumer = (s1, s2) -> System.out.println(s1 + " " + s2);
 		biAcceptBiConsumer.accept("Manali", "Deepak");
-		
+
 		BiFunction<String, String, Integer> biApplyBiFunction = (s1, s2) -> s1.length() + s2.length();
-		Integer bothLength=  biApplyBiFunction.apply("Manali", "Deepak");
+		Integer bothLength = biApplyBiFunction.apply("Manali", "Deepak");
 		System.out.println(bothLength);
-		
-		BiPredicate<String, Integer> biTestPredicate= (s1,n1)->s1.length()==n1;
-		boolean lengthMatch=  biTestPredicate.test("Manali", "Deepak".length());
+
+		BiPredicate<String, Integer> biTestPredicate = (s1, n1) -> s1.length() == n1;
+		boolean lengthMatch = biTestPredicate.test("Manali", "Deepak".length());
 		System.out.println(lengthMatch);
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+
+
+
 	}
 }
