@@ -2,7 +2,6 @@ package I10_Annotations;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
-import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
 @Retention(RetentionPolicy.RUNTIME)
@@ -45,21 +44,15 @@ public class AnnotationExample {
 				String methodName = greeting.invokeMethodName();
 
 				for (Method method : methods) {
-
 					if (methodName.equals(method.getName())) {
 						try {
-							method.invoke(greeting, (Object[]) null);
-						} catch (IllegalAccessException e) {
-							// TODO Auto-generated catch block
-							e.printStackTrace();
-						} catch (InvocationTargetException e) {
-							// TODO Auto-generated catch block
+							Deepak deepak = objClass.getDeclaredConstructor().newInstance();
+							method.invoke(deepak, (Object[]) null);
+						} catch (Exception e) {
 							e.printStackTrace();
 						}
 					}
-
 				}
-
 			} else {
 				System.out.println("Greeting are disabled!");
 			}
