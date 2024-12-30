@@ -16,7 +16,7 @@ public class LoadTesting {
 
 		Duration totalTime = Duration.between(starTime, endTime);
 
-		System.err.println("Total Time" + totalTime.toMillis());
+		System.err.println("Total Time for execution: " + totalTime.toMillis());
 
 	}
 
