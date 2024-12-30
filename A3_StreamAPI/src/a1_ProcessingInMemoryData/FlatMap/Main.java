@@ -1,6 +1,7 @@
 package a1_ProcessingInMemoryData.FlatMap;
 
 import java.util.List;
+import java.util.stream.IntStream;
 
 class City {
 	public String name;
@@ -43,6 +44,8 @@ public class Main {
 		long totalPopulation = countries.stream().flatMap(country -> country.cities.stream())
 				.mapToLong(city -> city.population).sum();
 		System.out.println(totalPopulation);
+		
+		
 
 	}
 }
