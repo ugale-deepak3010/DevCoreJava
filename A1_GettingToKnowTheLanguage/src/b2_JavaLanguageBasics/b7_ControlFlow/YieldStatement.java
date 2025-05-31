@@ -18,6 +18,10 @@ public class YieldStatement {
 
 		int result;
 
+// yield helps to return value from switch case! by default switch is only flow and nothing return.
+// yield added in java12 for preview a d java13 permanent.
+// if yeild was not here we can't use 'result='
+
 		result = 
   
   switch (d) {
