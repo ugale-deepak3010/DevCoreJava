@@ -8,7 +8,11 @@ package b2_JavaLanguageBasics.b5_Operators;
 	%+-*
 	\\/ only last char 
 
-3. Unary Operators			Comparison Operator
+3. Unary Operators			
+
+!a -a +a --a
+
+Comparison Operator
 	==	!=	> <	<= >=
 
 4.	Conditional Operators
@@ -22,6 +26,10 @@ package b2_JavaLanguageBasics.b5_Operators;
 6.	Bitwise and Bit Shift Operators
 	
 	~	<<	>>	>>>	&	^	|
+
+7. Ternary operator 
+
+condition?trueValue:falseValue;
 
 
 
