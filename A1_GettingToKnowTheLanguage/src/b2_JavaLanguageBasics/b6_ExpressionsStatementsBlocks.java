@@ -18,6 +18,7 @@ public class b6_ExpressionsStatementsBlocks {
 		if (value1 == value2)
 			System.out.println("value1 == value2");
 
+// Exceptional
 		double d1 = 0.1 + 0.1 + 0.1 + 0.1 + 0.1 + 0.1 + 0.1 + 0.1 + 0.1 + 0.1; // 1.0 but result 0.999999...
 		System.err.println("d1= " + d1);
 		System.out.println("d1 == 1 ? " + (d1 == 1.0)); // hence false!
