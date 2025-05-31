@@ -18,7 +18,9 @@ public class YieldStatement {
 
 		int result;
 
-		result = switch (d) {
+		result = 
+  
+  switch (d) {
 		case SATURDAY, SUNDAY -> 0;
 		default -> {
 			int remainingWorkDays = 5 - d.ordinal();
