@@ -1,5 +1,9 @@
 package b2_JavaLanguageBasics.b5_Operators;
 
+
+// all prefix or postfix operator are unary 
+// but all unary operator not prefix or postfix
+// example !a or -a like this.
 class UnaryDemo {
 
     public static void main(String[] args) {
