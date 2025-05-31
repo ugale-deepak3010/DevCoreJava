@@ -17,6 +17,6 @@ class IfElseDemo {
         } else {
             grade = 'F';
         }
-        System.out.println("Grade = " + grade);
+        System.out.println("Grade = " + grade);//C
     }
 }
