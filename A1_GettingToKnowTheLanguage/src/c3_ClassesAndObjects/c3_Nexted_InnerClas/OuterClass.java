@@ -25,9 +25,8 @@ public class OuterClass {
 		InnerClass innerClass2 = outerClass.new InnerClass();
 		// InnerClass innerClass3= new outerClass.InnerClass(); //wrong
 
-		OuterClass.
-
-				StaticInnerClass staticInnerClass = new StaticInnerClass();
+//direct static class object 
+		OuterClass.StaticInnerClass staticInnerClass = new StaticInnerClass();
 	}
 
 }
