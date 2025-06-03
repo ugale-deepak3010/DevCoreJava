@@ -40,7 +40,7 @@ public class DataStructure {
 		public boolean hasNext() {
 
 			// Check if the current element is the last in the array || DataStructure.SIZE / it's innerClass
-			return (nextIndex <= SIZE - 1);
+			return (nextIndex < SIZE);
 		}
 
 		public Integer next() {
