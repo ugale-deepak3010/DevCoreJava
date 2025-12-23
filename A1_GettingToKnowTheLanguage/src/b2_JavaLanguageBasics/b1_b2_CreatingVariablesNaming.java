@@ -16,9 +16,10 @@ public class b1_b2_CreatingVariablesNaming {
 		/** Creating Values with Literals. */
 		boolean result = true;
 		char capitalC = 'C';
-		byte b = 100;
-		short s = 10000;
-		int i = 100000;
+		
+		byte b = 100;  // +128 to -128
+		short s = 10000; // +32768 to -32768
+		int i = 100000; // 	2,147,483,647 to -2,147,483,648
 
 		// **********
 
@@ -26,14 +27,14 @@ public class b1_b2_CreatingVariablesNaming {
 		int decimalValue = 26;
 
 		// The number 26, in hexadecimal
-		int hexadecimalValue = 0x1a;
+		int hexadecimalValue = 0x1a; // 0x contains
 
 		// The number 26, in binary
-		int binaryValue = 0b11010;
+		int binaryValue = 0b11010; // 0b
 
 		// **************
 
-		double d1 = 123.4;
+		double d1 = 123.4; 
 
 		// same value as d1, but in scientific notation
 		double d2 = 1.234e2;
@@ -77,7 +78,7 @@ public class b1_b2_CreatingVariablesNaming {
 		// At the end of a literal
 //		int x2 = 52_;
 		// OK (decimal literal)
-		int x3 = 5_______2;
+		int x3 = 5_______2; //52
 
 		// Invalid: cannot put underscores
 		// in the 0x radix prefix

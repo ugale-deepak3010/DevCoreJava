@@ -20,12 +20,22 @@ public class b6_ExpressionsStatementsBlocks {
 
 // Exceptional Q.
 		double d1 = 0.1 + 0.1 + 0.1 + 0.1 + 0.1 + 0.1 + 0.1 + 0.1 + 0.1 + 0.1; // 1.0 but result 0.999999...
+		
+		double correct = 0.9 + 0.1;
+		System.err.println("0.9 + 0.1 = "+correct);
+		
 		System.err.println("d1= " + d1);
 		System.out.println("d1 == 1 ? " + (d1 == 1.0)); // hence false!
 
-		int z = 5 + 2 / 100; // ambiguous
+		double z = 5 + 2 / 100; // ambiguous KanjeBhaGuBeVaja 2/100 = 0.02 + 5 = 5.02
+		System.out.println("z = "+z); // Q????? 5 ----------- 0.2->0 becuase 2 is int 100 is int res is int 0.2 ->0 +5 ==5
 
-		int x = 5 + (2 / 100); // unambiguous, recommended
+		double x = 5 + (2 / 100); // unambiguous, recommended
+		System.out.println("x = "+x);
+		
+		double correctWay = 5.0 + 2.0 / 100.00 ; // now answer will be correct! always use 
+		System.out.println("correctWay = "+correctWay);
+		
 
 		double aValue;
 		aValue = 8933.234;// assignment statement

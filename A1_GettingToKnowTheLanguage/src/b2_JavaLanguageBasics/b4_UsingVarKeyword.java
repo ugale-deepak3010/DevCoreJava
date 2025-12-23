@@ -20,7 +20,6 @@ public class b4_UsingVarKeyword {
 
 	
 	
-	@SuppressWarnings("resource")
 	public static void main(String[] args) throws IOException {
 
 		/** 	The Var Keyword 	*/
@@ -46,9 +45,10 @@ public class b4_UsingVarKeyword {
 		try (var stream2 = Files.newInputStream(path)) {
 		    // process the file
 		}
-
+		
+		stream.close();
+		stream1.close();
 
 
 	}
-
 }
