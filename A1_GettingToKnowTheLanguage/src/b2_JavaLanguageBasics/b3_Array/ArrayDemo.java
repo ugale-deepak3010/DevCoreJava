@@ -3,6 +3,7 @@ package b2_JavaLanguageBasics.b3_Array;
 @SuppressWarnings("unused")
 class ArrayDemo {
 	public static void main(String[] args) {
+
 		// declares an array of integers
 		int[] anArray;
 
@@ -13,7 +14,7 @@ class ArrayDemo {
 		anArray[0] = 100;
 		// initialize second element
 		anArray[1] = 200;
-		
+
 		// and so forth
 		anArray[2] = 300;
 		anArray[3] = 400;
@@ -34,11 +35,9 @@ class ArrayDemo {
 		System.out.println("Element at index 7: " + anArray[7]);
 		System.out.println("Element at index 8: " + anArray[8]);
 		System.out.println("Element at index 9: " + anArray[9]);
-		
-		
+
 		/** Declaring a Variable to Refer to an Array */
-		
-		
+
 		byte[] anArrayOfBytes;
 		short[] anArrayOfShorts;
 		long[] anArrayOfLongs;
@@ -47,10 +46,9 @@ class ArrayDemo {
 		boolean[] anArrayOfBooleans;
 		char[] anArrayOfChars;
 		String[] anArrayOfStrings;
-		
+
 		// this form is discouraged
 		float anArrayOfFloats___way2__[];
-
 
 	}
 }

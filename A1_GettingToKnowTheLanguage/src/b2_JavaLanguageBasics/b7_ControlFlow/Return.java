@@ -11,7 +11,7 @@ public class Return {
 	public void say1() {
 		System.out.println("Hello1");
 
-		return;
+		return; // nothing is return
 	}
 
 	public static void main(String[] args) {

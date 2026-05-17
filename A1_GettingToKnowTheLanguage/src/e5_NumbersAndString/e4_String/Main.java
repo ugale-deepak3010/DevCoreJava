@@ -22,7 +22,7 @@ public class Main {
 		String string2 = "Deepak";
 		string1.concat(string2);
 
-		"My name is ".concat("Rumplestiltskin");
+		"My name is ".concat("Rumplestiltskin"); // direct . used after quote!
 
 		String string3 = "Hello," + string2 + "!";
 

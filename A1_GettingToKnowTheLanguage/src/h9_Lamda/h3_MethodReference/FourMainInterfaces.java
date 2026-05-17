@@ -35,6 +35,7 @@ public class FourMainInterfaces {
 		// 4.
 		Predicate<String> TestPredicate = (String s) -> s.length() == 3;
 		Predicate<String> TestPredicate_v2 = s -> s.length() == 3;
+		Predicate<String> TestPredicate_v2x = String::isEmpty;
 
 		boolean b = TestPredicate.test("Dee");
 		System.out.println(b);

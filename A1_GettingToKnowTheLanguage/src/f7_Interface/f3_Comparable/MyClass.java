@@ -1,6 +1,7 @@
 package f7_Interface.f3_Comparable;
 
 public class MyClass implements Interface1 {
+
 	private int orderSequence;
 
 	public MyClass(int orderSequence) {

@@ -22,24 +22,33 @@ public class YieldStatement {
 // yield added in java12 for preview a d java13 permanent.
 // if yeild was not here we can't use 'result='
 
-		result = 
-  
-  switch (d) {
-		case SATURDAY, SUNDAY -> 0;
-		default -> {
-			int remainingWorkDays = 5 - d.ordinal();
+		result =
 
-			yield remainingWorkDays;
-		}
-		};
+				switch (d) {
+					case SATURDAY, SUNDAY -> 0;
+					default -> {
+						int remainingWorkDays = 5 - d.ordinal();
+	
+						yield remainingWorkDays;
+					}
+				};
 
 		return result;
 
 	}
 
 	public static void main(String[] args) {
+		// yield is returning the value from switch!
+		// without yield noting is return! only internally we can assign
+
+		System.err.println(Day.WEDNESDAY.ordinal()); // position of enum in int
+
 		// woring days
 		System.out.println(calculate(Day.SUNDAY));
+
+//		Thread.yield(); this is for Multithreading related! not swtich related
+		// → gives CPU chance to other threads (scheduler hint)
+
 	}
 
 }

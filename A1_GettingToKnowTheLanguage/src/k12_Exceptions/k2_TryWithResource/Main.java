@@ -7,11 +7,12 @@ import java.io.IOException;
 public class Main {
 
 	static String readFirstLineFromFile(String path) throws IOException {
-		try {
+
+		try {  // catch is optional!
 			BufferedReader br = new BufferedReader(new FileReader(path));
 			String line = br.readLine();
-			br.close(); // must be close.
-			return line; // can't use for return readline.
+			br.close(); // must be close manually!
+			return line; // can't use for return readline becuase that may throw,
 		} finally {
 
 		}
@@ -19,7 +20,8 @@ public class Main {
 
 	static String readFirstLineFromFile_v2(String path) throws IOException {
 
-		try (BufferedReader br = new BufferedReader(new FileReader(path))) {		//		resource will automatically close once use.
+		try (BufferedReader br = new BufferedReader(new FileReader(path))) { // resource will automatically close once
+																				// use.
 			return br.readLine();
 		}
 	}

@@ -2,13 +2,13 @@ package k12_Exceptions.k3_Throws_Throw_Error;
 
 public class ThrowThrows {
 
-	public void myMethod() {
+	public void myMethod() throws ArithmeticException {
 		int x = 3 / 0;
 
 		System.out.println(x);
 	}
 
-	public void myMethod_v2() throws ArithmeticException {
+	public void myMethod_v2() throws ArrayIndexOutOfBoundsException {
 		int[] x = { 1, 2 };
 
 		System.out.println(x[5]);

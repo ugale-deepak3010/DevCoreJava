@@ -48,7 +48,7 @@ public class CompareInteger {
 		Age deepakAge = new Age(26, "Deepak");
 		Age manaliActualAge = new Age(26, "Manali Actual Age");
 		Age manaliThinkAge = new Age(25, "Manali What she thinks");
-		Age manaliGirlAge = new Age(1, "Manali Her Girl");
+		Age manaliGirlAge = new Age(1, "Manali Her Girl (Shreesha)");
 
 		int res = NumberComparator.compare(deepakAge.age, manaliThinkAge.age);
 		System.err.println(res);

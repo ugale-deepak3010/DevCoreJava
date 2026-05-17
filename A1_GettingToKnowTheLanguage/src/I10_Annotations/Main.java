@@ -1,9 +1,9 @@
 package I10_Annotations;
 
 @interface ClassPreamble {
-	String author();	//element1
+	String author(); // element1
 
-	String date();		//element2
+	String date(); // element2
 
 	int currentRevision() default 1;
 
@@ -15,7 +15,7 @@ package I10_Annotations;
 	String[] reviewers();
 }
 
-@ClassPreamble(author = "Deepak Ugale", date = "22-12-2024", reviewers = { "Deepak",
+@ClassPreamble(author = "Deepak Ugale", date = "22-12-2024", reviewers = { "Deepak Ugale",
 		"Manali Rahangdale" }, currentRevision = 2)
 @SuppressWarnings(value = { "unused" })
 public class Main {
@@ -23,9 +23,10 @@ public class Main {
 	public static void main(String[] args) {
 
 		int unusedMe;
-		
+
 		System.out.println("Welcome!");
-		// Where annotation can be use?
+		// Where annotation can be use? reflections to map the some mapping. Mostly in
+		// frameworks!
 
 		// Class instance creation expression:
 		// new @Interned MyObject();

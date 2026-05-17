@@ -2,7 +2,7 @@ package d4_RecordToModel.d2_AdditionalDeclarations;
 
 public record CanonicalConstructor(int min, int max) {
 
-	// refer State Record
+	// refer State Record | apply validation on record for Canonical constuctor can
 	public CanonicalConstructor(int min, int max) {
 		this.max = min;
 		this.min = max;

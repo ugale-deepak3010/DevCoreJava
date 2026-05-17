@@ -7,7 +7,7 @@ public class FinallyUseCase {
 			try {
 				int x = 2 / 0;
 				System.out.println(x);
-				
+
 			} finally {
 
 				if (System.out != null) {

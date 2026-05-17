@@ -1,6 +1,6 @@
 package e5_NumbersAndString.e2_FormattingNumeric;
 
-import java.text.*;
+import java.text.DecimalFormat;
 
 public class DecimalFormatDemo {
 
@@ -11,7 +11,7 @@ public class DecimalFormatDemo {
 	}
 
 	static public void main(String[] args) {
-
+		
 		customFormat("###,###.###", 123456.789);
 		customFormat("###.##", 123456.789);
 		customFormat("000000.000", 123.78);

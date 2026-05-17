@@ -1,5 +1,7 @@
 package c3_ClassesAndObjects.c3_Nexted_InnerClas;
 
+import java.util.Iterator;
+
 public class DataStructure {
 
 	// Create an array
@@ -17,7 +19,7 @@ public class DataStructure {
 
 		// Print out values of even indices of the array
 		DataStructureIterator iterator = this.new EvenIterator();
-		
+
 		while (iterator.hasNext()) {
 			System.out.print(iterator.next() + " ");
 		}
@@ -26,20 +28,24 @@ public class DataStructure {
 
 	// TestChange For Git.
 
-	interface DataStructureIterator extends java.util.Iterator<Integer> {
+	// subclass/subInterface
+	interface DataStructureIterator extends Iterator<Integer> {
 	}
 
 	// Inner class implements the DataStructureIterator interface,
 	// which extends the Iterator<Integer> interface
 
+	// subclass
 	private class EvenIterator implements DataStructureIterator {
 
 		// Start stepping through the array from the beginning
 		private int nextIndex = 0;
 
+		@Override
 		public boolean hasNext() {
 
-			// Check if the current element is the last in the array || DataStructure.SIZE / it's innerClass
+			// Check if the current element is the last in the array || DataStructure.SIZE /
+			// it's innerClass
 			return (nextIndex < SIZE);
 		}
 

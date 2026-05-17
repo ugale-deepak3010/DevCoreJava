@@ -7,8 +7,9 @@ import java.util.logging.Logger;
 public class Main {
 
 	public static void main(String[] args) {
+
 		try {
-			
+
 			FileHandler handler = new FileHandler("/home/dipakugale/Music/TestFolder/OutFile.log");
 			Logger.getLogger("").addHandler(handler);
 			System.out.println("Logging");
@@ -19,7 +20,7 @@ public class Main {
 			try {
 				Logger logger = Logger.getLogger("k12_Exceptions.LogginExceptions");
 				StackTraceElement elements[] = e.getStackTrace();
-				for (int i = 0, n = elements.length; i < n; i++) {
+				for (int i = 0, n = elements.length; i < n; i++) { // in i=0 section we can use comma!
 					logger.log(Level.WARNING, elements[i].getMethodName());
 					logger.log(Level.SEVERE, "Something went wrong, please check", e.getMessage());
 				}

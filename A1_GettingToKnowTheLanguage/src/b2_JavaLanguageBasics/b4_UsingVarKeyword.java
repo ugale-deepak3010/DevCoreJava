@@ -3,6 +3,7 @@ package b2_JavaLanguageBasics;
 import java.io.IOException;
 import java.io.InputStream;
 import java.nio.file.Files;
+import java.nio.file.LinkOption;
 import java.nio.file.Path;
 import java.util.List;
 
@@ -21,6 +22,29 @@ public class b4_UsingVarKeyword {
 	
 	
 	public static void main(String[] args) throws IOException {
+		
+		try {
+			Path myPath= Path.of("debug.log");
+			
+					
+			var x = Files.exists(myPath, LinkOption.NOFOLLOW_LINKS);
+			
+			System.out.println("File is "+ (x?"exist":"Not exist"));
+
+			
+			if (!x) {
+				Files.createFile(myPath);
+				
+				var y = Files.exists(myPath, LinkOption.NOFOLLOW_LINKS);
+				
+				System.out.println("File is "+ (y?"exist":"Not exist"));
+				
+			}
+			
+			
+		}catch (Exception e) {
+			System.out.println(e.getMessage());
+		}
 
 		/** 	The Var Keyword 	*/
 		String message1 = "Hello world!";

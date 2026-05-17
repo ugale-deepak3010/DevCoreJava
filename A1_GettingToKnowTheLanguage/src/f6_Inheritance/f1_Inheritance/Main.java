@@ -9,7 +9,7 @@ public class Main {
 
 	public static void main(String[] args) {
 
-		Object child_o = new Child();
+		Object child_o = new Child(); // can't acess child_o.childMethod(); !!
 		GrandParent child_gp = new Child();
 		Parent child_p = new Child();
 		Child child_only = new Child();

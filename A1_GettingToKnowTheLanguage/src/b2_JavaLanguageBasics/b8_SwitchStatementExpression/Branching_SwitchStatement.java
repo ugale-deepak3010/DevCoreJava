@@ -9,7 +9,7 @@ public class Branching_SwitchStatement {
 
 		int quarter = 3; // any value
 
-		String quarterLabel = null;
+		String quarterLabel = null; // if yield use null not need to set!
 		switch (quarter) {
 		case 0:
 			quarterLabel = "Q1 - Winter";
@@ -82,75 +82,74 @@ public class Branching_SwitchStatement {
 		case 12:
 			numDays = 31;
 			break;
-		//----------------	
+		// ----------------
 		case 4:
 		case 6: // April June
 		case 9:
 		case 11: // September November
 			numDays = 30;
 			break;
-		//----------------------
+		// ----------------------
 		case 2: // February
-			if (	(	(year % 4 == 0) && !(year % 100 == 0)) 		|| (year % 400 == 0)	)
-				//leap year
+			if (((year % 4 == 0) && !(year % 100 == 0)) || (year % 400 == 0))
+				// leap year
 				numDays = 29;
 			else
 				numDays = 28;
 			break;
-		//------------------------------
+		// ------------------------------
 		default:
 			System.out.println("Invalid month.");
 			break;
 		}
 		System.out.println(numDays);
-		//******************************************************
-		
-		
+		// ******************************************************
+
 		String monthS = "march"; // any month
 		int monthNumber = -1;
 
 		switch (monthS.toLowerCase()) {
-		    case "january":
-		        monthNumber = 1;
-		        break;
-		    case "february":
-		        monthNumber = 2;
-		        break;
-		    case "march":
-		        monthNumber = 3;
-		        break;
-		    case "april":
-		        monthNumber = 4;
-		        break;
-		    case "may":
-		        monthNumber = 5;
-		        break;
-		    case "june":
-		        monthNumber = 6;
-		        break;
-		    case "july":
-		        monthNumber = 7;
-		        break;
-		    case "august":
-		        monthNumber = 8;
-		        break;
-		    case "september":
-		        monthNumber = 9;
-		        break;
-		    case "october":
-		        monthNumber = 10;
-		        break;
-		    case "november":
-		        monthNumber = 11;
-		        break;
-		    case "december":
-		        monthNumber = 12;
-		        break;
-		    default: 
-		        monthNumber = 0;
-		        break;
+		case "january":
+			monthNumber = 1;
+			break;
+		case "february":
+			monthNumber = 2;
+			break;
+		case "march":
+			monthNumber = 3;
+			break;
+		case "april":
+			monthNumber = 4;
+			break;
+		case "may":
+			monthNumber = 5;
+			break;
+		case "june":
+			monthNumber = 6;
+			break;
+		case "july":
+			monthNumber = 7;
+			break;
+		case "august":
+			monthNumber = 8;
+			break;
+		case "september":
+			monthNumber = 9;
+			break;
+		case "october":
+			monthNumber = 10;
+			break;
+		case "november":
+			monthNumber = 11;
+			break;
+		case "december":
+			monthNumber = 12;
+			break;
+		default:
+			monthNumber = 0;
+			break;
 		}
-		
+
 		System.out.println(monthNumber);
 
 	}

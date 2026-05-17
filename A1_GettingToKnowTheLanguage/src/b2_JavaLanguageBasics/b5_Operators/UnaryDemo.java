@@ -20,9 +20,9 @@ class UnaryDemo {
         // result is now 1
         System.out.println(result);
 
-        result = -result;
+        result = -result; // ???????????? int variable but still getting negative value similar like "!"
         // result is now -1
-        System.out.println(result);
+        System.err.println(result);
 
         boolean success = false;
         // false

@@ -2,9 +2,9 @@ package e5_NumbersAndString.e4_String;
 
 public class ConvertingStringsToNumbers {
 
+	@SuppressWarnings("unused")
 	public static void main(String[] args1) {
-		
-		
+
 		String[] args = new String[2];
 		args[0] = "5";
 		args[1] = "3";
@@ -25,5 +25,8 @@ public class ConvertingStringsToNumbers {
 		} else {
 			System.out.println("This program " + "requires two command-line arguments.");
 		}
+
+		String sixString = "6";
+		int sixInt = Integer.valueOf(sixString).intValue();
 	}
 }

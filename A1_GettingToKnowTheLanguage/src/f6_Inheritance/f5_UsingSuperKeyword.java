@@ -8,20 +8,20 @@ class Parent {
 	}
 
 	Parent(String name) {
-		System.out.println("Hello " + name);
+		System.out.println("Constructr says Hello " + name);
 	}
 
 	static String StaticName = null;
 
-	public static void setStaticName(String name) {
+	public void setStaticName(String name) {
 		StaticName = name;
 	}
 
 	public static void StaticMethod() {// can be private
 
 		String name = null;
-		boolean isEmpty = StaticName==null;	// only equal for method, null should be use ==
-		name = isEmpty ? "Lovers" : StaticName;
+		boolean isEmpty = StaticName == null; // only equal for method, null should be use == , true
+		name = isEmpty ? "Lover" : StaticName;
 
 		System.out.println("Hello " + name + "!");
 	}
@@ -30,11 +30,11 @@ class Parent {
 class Child extends Parent {
 
 	public void setYourName(String name) {
-		super.setStaticName(name);
+		super.setStaticName(name); // super can use like Parent object!!
 	}
 
 	public Child(String firstName) {
-		super(firstName);
+		super(firstName); // super pass the value to Parent constructor!
 	}
 
 }
@@ -45,9 +45,9 @@ public class f5_UsingSuperKeyword {
 
 		Child child = new Child("Manali");
 		child.setYourName("Deepak");
-		
+
 		Parent.StaticMethod();
-		
+
 		child.setYourName(null);
 		Parent.StaticMethod();
 

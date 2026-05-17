@@ -1,6 +1,6 @@
 package b2_JavaLanguageBasics.b5_Operators;
 
-class ConditionalDemo1 {
+class ConditionalDemo {
 
     public static void main(String[] args){
         int value1 = 1;

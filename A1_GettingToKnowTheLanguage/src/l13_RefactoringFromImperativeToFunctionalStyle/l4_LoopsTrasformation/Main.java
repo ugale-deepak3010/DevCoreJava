@@ -14,6 +14,8 @@ public class Main {
 
 		names.stream().map(String::toLowerCase).forEach(System.err::println);
 
+		names.forEach(System.out::println);
+
 	}
 
 }

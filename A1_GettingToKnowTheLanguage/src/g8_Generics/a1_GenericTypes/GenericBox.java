@@ -15,18 +15,14 @@ S, U, V etc. - 2nd, 3rd, 4th types
 
 */
 @SuppressWarnings("unused")
-public class GenericBox<T> {	
-	
+public class GenericBox<T extends Object> {
+
 	public GenericBox(T t) {
 		setT(t);
 	}
-	
-	
 
 	public GenericBox() {
 	}
-
-
 
 	private T t;
 

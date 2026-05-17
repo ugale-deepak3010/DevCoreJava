@@ -13,15 +13,16 @@ public class Main {
 
 		// Functional
 		IntStream.range(0, 5).forEach(i -> System.out.println(i));
-		IntStream.range(0, 5).forEach(System.out::println); // Method Reference
+		IntStream.range(0, 5).forEach(System.err::println); // Method Reference
 
-		// Include ending value	'<='
+		// Include ending value '<='
 
 		for (int i = 0; i <= 5; i++) {
 			System.out.println(i);
 		}
 
 		IntStream.rangeClosed(0, 5).forEach(System.out::println);
+		
 
 	}
 

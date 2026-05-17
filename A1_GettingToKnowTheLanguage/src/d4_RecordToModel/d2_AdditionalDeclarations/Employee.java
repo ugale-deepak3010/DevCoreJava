@@ -7,7 +7,7 @@ public record Employee(long id, String name, String department) {
 	static int z = 5;
 	static String a;
 
-	public String getEmployeeKundali() {
+	public String getEmployeeKundali() { // can be add methods, fields
 		return "Engineering in " + this.department;
 	}
 }

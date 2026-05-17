@@ -8,14 +8,12 @@ public class MountainBike extends Bicycle {
 
     // the MountainBike subclass has
     // one constructor
-    public MountainBike(int startHeight, int startCadence,
-                        int startSpeed, int startGear) {
-        super(startCadence, startSpeed, startGear);
+    public MountainBike(int startHeight, int startCadence, int startSpeed, int startGear) {
+        super(startCadence, startSpeed, startGear); // super() is parameterized constructor 
         seatHeight = startHeight;
     }   
         
-    // the MountainBike subclass has
-    // one method
+    // the MountainBike subclass has one method
     public void setHeight(int newValue) {
         seatHeight = newValue;
     }   

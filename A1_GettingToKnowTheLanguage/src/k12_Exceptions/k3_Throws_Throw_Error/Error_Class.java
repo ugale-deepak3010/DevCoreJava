@@ -12,8 +12,9 @@ public class Error_Class {
 
 			myMethod();
 			System.out.println("naaah!");
+
 		} catch (Exception e) {
-			System.out.println("Somethign went wrong: "+e);
+			System.out.println("Somethign went wrong: " + e);
 		}
 
 	}

@@ -5,6 +5,7 @@ interface Animal {
 }
 
 class Dog implements Animal {
+
 	@Override
 	public void makeSound() {
 		System.out.println("Woof!");
@@ -19,8 +20,9 @@ class Cat implements Animal {
 }
 
 public class InterfaceAsTypeExample {
+	
 	public static void main(String[] args) {
-		
+
 		// Use the interface as a type
 		Animal myDog = new Dog(); // Dog object referenced by Animal type
 		Animal myCat = new Cat(); // Cat object referenced by Animal type

@@ -1,6 +1,6 @@
 package f6_Inheritance.f2_MethodOverriding_Overloading_Hiding;
 
-// can't create object
+// can't create object! need to use via inheritance.
 public abstract class AbstractParent {
 
 	int Still_I_can_declare = 143;
@@ -9,7 +9,7 @@ public abstract class AbstractParent {
 		System.out.println("I am still able to present here! Haha...!");
 	}
 
-	// default method not allowed here, only declare in inteface
+	// default method not allowed here, only can declare in inteface
 	public abstract void whoIsUsing();
 
 	public static void abstractInStaticMethod() {

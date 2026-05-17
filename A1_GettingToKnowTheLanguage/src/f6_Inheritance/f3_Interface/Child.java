@@ -21,7 +21,8 @@ public class Child extends ParentClass implements AbstractParent, AbstractInterf
 	}
 
 	@Override
-	public void sameName() {
+	public void sameName() { // This is default but due to present in both Interfaces hence need to implement
+								// in Class!
 		AbstractInterface2.super.sameName();
 	}
 

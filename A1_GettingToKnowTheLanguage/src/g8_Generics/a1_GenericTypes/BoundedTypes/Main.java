@@ -48,7 +48,7 @@ class MyClass<T> {
 	@SuppressWarnings("hiding")
 	public <T extends Comparable<T>> String makeVerifiedToString(T t) {
 		System.out.println(t);
-		
+
 		return t.toString();
 	}
 
@@ -56,7 +56,7 @@ class MyClass<T> {
 
 public class Main<T> {
 
-	public void sayHello(T t) {
+	public void sayHello(T t) {// must be present in class defination.
 		System.out.println(t);
 	}
 
@@ -67,7 +67,7 @@ public class Main<T> {
 		helloString.sayHello("Deepak");
 		helloString.sayHello(143);
 
-		MethodTypes helloNum = new MethodTypes();
+		MethodTypes helloNum = new MethodTypes(); // <T extends Number> void
 
 		helloNum.sayHello_Bounded_Type(143);
 		// helloNum.sayHello_Bounded_Type("Manali"); // Error!!
@@ -79,7 +79,7 @@ public class Main<T> {
 
 		// Generic Methods and Bounded Type Parameters
 
-		MyClass<Integer> myClass = new MyClass();
+		MyClass<Integer> myClass = new MyClass(); // Generic Types
 		myClass.makeToString(8);
 
 		MyClass<String> myClass2 = new MyClass();
@@ -88,9 +88,10 @@ public class Main<T> {
 		MyClass myClass3 = new MyClass();
 		myClass3.makeToString(3);
 		myClass3.makeToString(new ConvertString());
-		
+
 		myClass3.makeVerifiedToString(3);
-	//	myClass3.makeVerifiedToString(new ConvertString());	//	Error		not extending to Comparable!
+		// myClass3.makeVerifiedToString(new ConvertString()); // Error not extending to
+		// Comparable!
 
 	}
 }

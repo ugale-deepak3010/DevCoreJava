@@ -24,9 +24,9 @@ public class FourMainInterfaces {
 		System.out.println(string1);
 
 		// 3.
-		Function<String, String> applyFunction = (String s) -> s.toLowerCase();
+		Function<String, Integer> applyFunction = (String s) -> s.length();
 
-		String string2 = applyFunction.apply("MANALI AND DEEPAK");
+		int string2 = applyFunction.apply("MANALI AND DEEPAK");
 		System.out.println(string2);
 
 		// 4.

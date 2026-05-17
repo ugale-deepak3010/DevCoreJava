@@ -3,9 +3,9 @@ package c3_ClassesAndObjects.c3_Nexted_InnerClas;
 public class ShadowTest {
 
 	private int x = 1000;
-	
+
 	public void name() {
-		ShadowTest.this.x=500;//also can access.
+		ShadowTest.this.x = 500; // also can access. this or CurrentClassName.this
 	}
 
 	class FirstLevel {
@@ -22,7 +22,7 @@ public class ShadowTest {
 	public static void main(String... args) {
 		ShadowTest st = new ShadowTest();
 		ShadowTest.FirstLevel fl = st.new FirstLevel();
-		
+
 		fl.methodInFirstLevel(23);
 	}
 }

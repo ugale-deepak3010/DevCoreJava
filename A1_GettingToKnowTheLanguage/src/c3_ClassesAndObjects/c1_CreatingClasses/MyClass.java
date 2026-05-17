@@ -11,8 +11,7 @@ public class MyClass {
 	public int gear;
 	public int speed;
 
-	
-	//Passing Information to a Method or a Constructor
+	// Passing Information to a Method or a Constructor
 
 	public double computePayment(double loanAmt, double rate, double futureValue, int numPeriods) {
 		double interest = rate / 100.0;
@@ -21,39 +20,37 @@ public class MyClass {
 		double answer = (-loanAmt / denominator) - ((futureValue * partial1) / denominator);
 		return answer;
 	}
-	
-	
+
 	public Polygon polygonFrom(Point[] corners) {
-	    // method body goes here
+		// method body goes here
 		return null;
-	}
-	public Polygon polygonFrom0(int corners) {
-	    // method body goes here
-		return null;
-	}
-	
-	//******************************************************
-	//Arbitrary Number of Arguments
-	public Polygon polygonFrom2(Point... corners) {
-	   	    
-	    return null;
 	}
 
-	
-	
-	//public PrintStream printf(String format, Object... args)
-	//System.out.printf("%s: %d, %s%n", name, idnum, address);
-	//System.out.printf("%s: %d, %s, %s, %s%n", name, idnum, address, phone, email);
+	public Polygon polygonFrom0(int corners) {
+		// method body goes here
+		return null;
+	}
+
+	// ******************************************************
+	// Arbitrary Number of Arguments
+	// VarArgs
+	public Polygon polygonFrom2(Point... corners) {
+
+		return null;
+	}
+
+	// public PrintStream printf(String format, Object... args)
+	// System.out.printf("%s: %d, %s%n", name, idnum, address);
+	// System.out.printf("%s: %d, %s, %s, %s%n", name, idnum, address, phone,
+	// email);
 
 	public void typeParameter(int primitiveType) {
-		
+
 	}
-	
+
 	public void referenceType(DataArtist referenceType) {
-		
+
 	}
-
-
 }
 
 // 		OVERLOADING METHOD 

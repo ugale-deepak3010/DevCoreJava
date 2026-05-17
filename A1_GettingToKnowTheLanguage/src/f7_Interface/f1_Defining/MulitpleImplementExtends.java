@@ -38,15 +38,21 @@ public interface MulitpleImplementExtends extends Interface2, Interface3 // , Ab
 
 	default void hi() {// optional to implement
 		System.out.println("I have body");
+		privateMethod();
 	}
 
 	// can't implement it in class
 	static void hello() {
+
 		System.out.println("hello");
 	}
 
 	// when we redeclare default method in interface so it become abstract!!!!
 	@Override
 	public void helloDefault_Interface2();
+
+	private void privateMethod() {
+		System.out.println();
+	}
 
 }

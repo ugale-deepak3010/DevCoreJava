@@ -1,5 +1,6 @@
 package g8_Generics.a1_GenericTypes.GenericMethods;
 
+// Generic Class
 public class Main<K, V> {
 
 	private K key;

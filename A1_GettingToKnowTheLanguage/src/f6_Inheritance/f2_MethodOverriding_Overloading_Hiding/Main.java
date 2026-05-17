@@ -1,5 +1,8 @@
 package f6_Inheritance.f2_MethodOverriding_Overloading_Hiding;
 
+// Overriding = Runtime Polymorphism, Overloading = Compiletime polymorphism.
+// Method Ovverriding = Method present in Parent class/Interface but implmeneted in Child.
+// Method overloading = way1: Parm type change, Way2: Num Parm changes.
 public class Main {
 
 	public static void main(String[] args) {
@@ -9,14 +12,14 @@ public class Main {
 
 		parent.parentMethod();
 		child.parentMethod();
-		
-		
-		//----------------------------------------------------------------------
 
-		Child_2 child_2=new Child_2();
+		// ----------------------------------------------------------------------
+
+		Child_2 child_2 = new Child_2();
 		child_2.whoIsUsing();
-		
-		AbstractParent abstractParent = new AbstractParent() {
+
+		// Interface & Abstract can support Anonymous class
+		AbstractParent abstractParent = new AbstractParent() { // This is called Anonymous inner class
 
 			@Override
 			public void whoIsUsing() {
@@ -26,7 +29,7 @@ public class Main {
 				IamNotDeclaredAnywhere_static();
 			}
 
-			public void IamNotDeclaredAnywhere() {
+			public void IamNotDeclaredAnywhere() { // can't call directly.
 				System.err.println("I am Not Declared Anywhere");
 			}
 

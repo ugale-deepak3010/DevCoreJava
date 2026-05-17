@@ -14,7 +14,7 @@ public class Main {
 
 	public static void main(String[] args) {
 
-		Hello hello = new Hello() {
+		Hello hello = new Hello() { // annonymous class delcaration way.
 
 			@Override
 			public void goodMorning() {
@@ -24,16 +24,15 @@ public class Main {
 
 		System.out.print("Hello Depak, ");
 		hello.goodMorning();
-		
-		
-		IamAlsoFunctionInterface bye= new IamAlsoFunctionInterface() {
-			
+
+		IamAlsoFunctionInterface bye = new IamAlsoFunctionInterface() {
+
 			@Override
 			public void goodNight() {
 				System.out.println("Good Night!");
 			}
 		};
-		
+
 		bye.goodNight();
 	}
 }
