@@ -1,9 +1,14 @@
 package a1_CollectionFramwork.a8_MapKV;
 
 import java.util.HashMap;
+import java.util.Hashtable;
+import java.util.IdentityHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
+import java.util.TreeMap;
+import java.util.WeakHashMap;
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
@@ -11,6 +16,21 @@ public class Main {
 	public static void main(String[] args) {
 
 		Map<String, String> map = new HashMap<>(); // MUTABLE
+		
+		Map<Integer, String> deepMap1= new HashMap<>(); // Fast, unordered, not thread-safe
+		deepMap1.put(1, "One");
+		Map<Integer, String> deepMap2= new TreeMap<>(); // Ordered
+		deepMap2.put(1, "one");
+		Map<Integer, String> deepMap3= new ConcurrentHashMap<>(); // Fast, Thread-safe
+		deepMap3.put(1, "one");
+		Map<Integer, String> deepMap4= new IdentityHashMap<>(); // Uses == instead of .equals()
+		deepMap4.put(1, "one");
+		Map<Integer, String> deepMap5= new WeakHashMap<>();// Removes entries when key is garbage collected
+		deepMap5.put(1, "one");
+		Map<Integer, String> deepMap6= new Hashtable<>(); // old way of ConcurrentHashMap
+		deepMap6.put(1, "one");
+		
+		
 		map.put("MH", "Mumbai");
 		map.put("KA", "Banglore");
 		map.put("MP", "Bhopal");

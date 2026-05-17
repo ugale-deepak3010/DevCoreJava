@@ -3,6 +3,7 @@ package a1_CollectionFramwork.A7_StackAndQueue;
 import java.util.ArrayDeque;
 import java.util.Deque;
 
+// it's Modern Stack: LIFO
 public class A2_DeQueue {
 
 	public static void main(String[] args) {

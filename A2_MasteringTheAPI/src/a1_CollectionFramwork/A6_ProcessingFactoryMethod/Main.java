@@ -30,6 +30,7 @@ public class Main {
 
 			list2.add("four");
 			set2.add("four");
+
 		} catch (UnsupportedOperationException e) {
 			System.out.println("None of operation supported " + e);
 		}

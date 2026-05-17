@@ -26,7 +26,7 @@ public class Main {
 
 		// iterating -ListIterator
 
-		for (Iterator<String> iterator = strings.iterator(); iterator.hasNext();) {
+		for (Iterator<String> iterator = strings.iterator(); iterator.hasNext();) {// increment statement handle byt ite
 			String string = (String) iterator.next();
 
 			if (string.equals("2")) {
@@ -61,7 +61,8 @@ public class Main {
 
 		// way 2
 
-		numbers.sort(Comparator.comparingInt(String::length));
+		numbers.sort(Comparator.comparingInt(String::length)); // comparingInt require singe parm
+		numbers.sort((a, b) -> stringComparator.compare(a, b));// similar
 
 		// way 3-without method reference
 		numbers.sort((a, b) -> Integer.compare(a.length(), b.length()));

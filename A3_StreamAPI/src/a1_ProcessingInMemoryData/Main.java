@@ -42,8 +42,7 @@ public class Main {
 		System.out.println("Amount sold in March: " + totalAmount);
 
 		/*
-		 * select sum(amount) from Sales where extract(month from date) = 3;
-		 * 
+		 * select sum(amount) from Sales where extract(month from date) = 3; 
 		 */
 
 		// ---------------------------------------------

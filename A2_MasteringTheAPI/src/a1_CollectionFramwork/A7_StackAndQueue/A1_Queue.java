@@ -4,6 +4,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.concurrent.ArrayBlockingQueue;
 
+//FIFO
 public class A1_Queue {
 
 	public static void main(String[] args) {
@@ -24,6 +25,7 @@ public class A1_Queue {
 
 		queue.remove(); // throw error if empty
 		queue.poll(); // retrieve & then remove
+
 		System.out.println("two has removed: " + queue);
 
 		Queue<String> queue2 = new ArrayBlockingQueue<String>(1);
@@ -37,6 +39,5 @@ public class A1_Queue {
 		queue2.peek();// safe
 		queue2.poll();// safe
 
-		
 	}
 }
